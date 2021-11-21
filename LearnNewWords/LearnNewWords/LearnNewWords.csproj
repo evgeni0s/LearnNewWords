@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>LearnNewWords</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="MahApps.Metro" Version="2.4.9" />
+    <PackageReference Include="Prism.DryIoc" Version="8.0.0.1909" />
+    <PackageReference Include="Serilog" Version="2.10.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LearnNewWords.Core\LearnNewWords.Core.csproj" />
+    <ProjectReference Include="..\Modules\LearnNewWords.Modules.ModuleName\LearnNewWords.Modules.ModuleName.csproj" />
+    <ProjectReference Include="..\Services\LearnNewWords.Services.Interfaces\LearnNewWords.Services.Interfaces.csproj" />
+    <ProjectReference Include="..\Services\LearnNewWords.Services\LearnNewWords.Services.csproj" />
+  </ItemGroup>
+</Project>
